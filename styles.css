@@ -1,50 +1,112 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco para mayor contraste */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px; /* Añade padding para centrar mejor la información */
 }
 
 header {
-    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #007bff;
+}
+
+header h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff;
+}
+
+header h1 span {
+    color: #007bff; /* Color amarillo para el apellido */
+    text-shadow: 0 0 10px rgba(0, 195, 255, 0.7); /* Efecto de iluminación */
 }
 
 header nav ul {
-    list-style: none;
     padding: 0;
+    list-style: none;
 }
 
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #007bff; /* Color amarillo al pasar el ratón */
 }
 
 main {
-    padding: 20px;
+    padding: 20px 0;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 section {
     margin-bottom: 20px;
-}
-
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+    background: #111; /* Fondo oscuro para las secciones */
+    padding: 20px; /* Añade padding para centrar mejor el contenido */
+    border-radius: 5px;
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 20px;
+    position: relative; /* Asegura que el footer no se desplace */
     bottom: 0;
     width: 100%;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin: 0;
+    color: #fff; /* Asegura que el texto sea visible en el fondo oscuro */
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+.project a {
+    color: #007bff;
+    text-decoration: none;
 }
