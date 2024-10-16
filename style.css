@@ -15,7 +15,7 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: black;
     color: white;
 }
@@ -99,6 +99,7 @@ section{
     padding: 5rem 9% 5rem;
 }
 
+
 .home{
     display: flex;
     justify-content: center;
@@ -133,7 +134,7 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
+    width: 22vw;
     border-radius: 50%;
     box-shadow: 0 0 25px solid #00f7ff;
     cursor: pointer;
@@ -222,14 +223,8 @@ span{
 }
 
 @keyframes words{
-    0%, 30%{
-        content: "Web Developer";
-    }
-    31%, 60%{
+    0%, 100%{
         content: "Analista Programador";
-    }
-    61%, 100%{
-        content: "Backend Developer";
     }
 }
 
