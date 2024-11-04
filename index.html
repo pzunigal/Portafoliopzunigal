@@ -1,35 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Zúñiga | Desarrollador</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Pablo Zúñiga</a>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hola, me llamo <span>Pablo</span></h1>
-            <h3 class="typing-text">Y soy <span></span></h3>
-            <p>Me considero una persona creativa, con buena disposición y entusiasmado a siempre aprender más de Frontend y Backend</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/pzunigal/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/pzunigal" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/pvlozldk/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <div class="stars"></div>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Pablo Zúñiga</a>
+            <div class="nav-links">
+                <a href="#about">Sobre mí</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Proyectos</a>
             </div>
-            <a href="PabloCV.pdf" class="btn" download="CV Pablo Zúñiga">Descargar CV</a>
-        </div>
-    </section>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero/About Section -->
+        <section class="hero" id="about">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="greeting">Hola, soy</span>
+                        <h1>Pablo Zúñiga</h1>
+                        <h2>Analista Programador</h2>
+                        <p>Me considero una persona proactiva, creativa, con buena predisposición, grandescapacidades de organización, trabajo en equipo, buena resolución de problemas, amplia capacidad de aprendizaje y buen nivel de inglés.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/pzunigal" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pzunigal/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="assets/docs/PabloCV.pdf" class="cv-button" download>
+                                <i class="fas fa-file-download"></i>
+                                CV
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/images/main.jpg" alt="Pablo Zúñiga">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Spring Boot</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/proyecto1.jpg" alt="Proyecto 1">
+                        </div>
+                        <div class="project-content">
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-small secondary" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Puedes duplicar article.project-card para más proyectos -->
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-<footer>
-    <p>Portafolio en Progreso ...</p>
-</footer>
+
 </html>
