@@ -360,13 +360,36 @@ section {
 
 /* ===== FOOTER ===== */
 .footer {
-    scroll-snap-align: end;
-    background: var(--dark-color);
-    color: var(--light-color);
-    text-align: center;
-    padding: 2rem 0;
-    width: 100%;
-    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-social a {
+    color: var(--gray-color);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
 }
 
 /* ===== MEDIA QUERIES ===== */
